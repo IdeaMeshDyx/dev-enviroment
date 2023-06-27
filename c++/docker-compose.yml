@@ -1,0 +1,11 @@
+version: "0"
+
+services:
+  env:
+    image: devc:v0.0
+    container_name: devc_test
+    ports:
+      - "741:22"
+      - "852:873"
+    cap_add:
+      - ALL
