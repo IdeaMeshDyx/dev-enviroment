@@ -55,7 +55,7 @@ RUN sed -ri 's/^#PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 # 设置文件同步，开发流程为：将本地的文件映射到容器内运行
 COPY rsync.conf /etc
-RUN echo 'root:000000' |chpasswd
+RUN echo 'root:123456' |chpasswd
 RUN mkdir /root/sync
 
 # install boost
