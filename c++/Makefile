@@ -1,3 +1,2 @@
-new: $(dockerhubname):$(tag)
-	docker build -t $(dockerhubname)/$(tag) .
-
+clean:
+	rm -rf tmp/*
