@@ -2,10 +2,11 @@ version: "0"
 
 services:
   env:
-    image: devc:v0.0
-    container_name: devc_test
+    build: .
+    image: ideamesh/godev:v0.0
+    container_name: devc_go
     ports:
-      - "741:22"
-      - "852:873"
+      - "742:22"
+      - "853:873"
     cap_add:
       - ALL
