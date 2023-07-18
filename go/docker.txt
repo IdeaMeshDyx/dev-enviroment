@@ -1,0 +1,6 @@
+# 如果想要指定其他的目录来挂载文件的话,可以参考一下的指令
+
+docker run -d -P \
+    --name go_dev \
+    -v /data/home/yixinda/learn/go_util:/root/go_util \
+    bendyx/go_dev:v0.0
